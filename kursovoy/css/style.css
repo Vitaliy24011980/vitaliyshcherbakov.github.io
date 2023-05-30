@@ -1,0 +1,233 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    --background-color: white;
+    --text-color: black;
+    --background-color-hover: #eaeaea;
+    --padding-page: 20px;
+    --border-color: grey;
+}
+html.dark {
+    --background-color: black;
+    --text-color: white;
+    --background-color-hover: #1f1d1d;
+    --border-color:  grey;
+}
+.theme-change{
+    color: var(--text-color);
+}
+/*.theme-dark {*/
+/*    --background-color: black;*/
+/*    --text-color: white;*/
+/*    --border-color: #585858;*/
+/*    --background-color-hover: #1f1d1d;*/
+/*}*/
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+/*.container_titul {*/
+/*    background: linear-gradient(to left, #2d007a, #f681e1);*/
+
+/*}*/
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    transition: color 0.2s ease-in;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.logo {
+    width: 200px;
+    /*opacity: .3;*/
+    /*z-index:1;*/
+}
+
+/*.info_users {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 10px;*/
+/*}*/
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 400px;
+    height: 36px;
+    border: 1px solid gainsboro;
+    outline: none;
+    color: var(--text-color);
+    padding-left: 45px;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: inherit;
+    transition: all 0.2s ease-in;
+}
+
+.search-input::placeholder {
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.search-button {
+    position: absolute;
+    left: 15px;
+    color: var(--text-color);
+    font-size: 18px;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    cursor: pointer;
+}
+.link {
+    text-decoration: none;
+}
+.material {
+    font-family: "Material Symbols Outlined";
+}
+.material-fill {
+    font-variation-settings: "FILL" 1;
+}
+/*.material {*/
+/*    font-family: "Material Symbols Outlined";*/
+/*}*/
+/*.material-fill {*/
+/*    font-variation-settings: "FILL" 1;*/
+/*}*/
+.flex-grow {
+    flex-grow: 1;
+}
+.label-language-select {
+    position: absolute;
+    left: 10px;
+    font-size: 25px;
+}
+.input-language-select {
+    width: 140px;
+    padding: 0;
+    text-align: center;
+}
+
+.movies {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-around;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    justify-content: center;
+    gap: 40px;
+}
+
+.movies.column {
+    display: block;
+}
+
+.movie {
+    /*width: 300px;*/
+    margin: 10px;
+    position: relative;
+    /* display: flex;
+    gap:5px;
+   */
+
+}
+
+.movie.display-column {
+    margin: 10px;
+    position: relative;
+    display: flex;
+}
+
+.movie-cover-inner {
+    position: relative;
+
+}
+
+
+.movie-cover {
+
+    width: 100%;
+    aspect-ratio: 1/1.5;
+    border-radius: 10px;
+}
+
+.movie-cover:hover {
+    cursor: pointer;
+}
+
+/*.movie-cover--darkened {*/
+/*    background-color: #000000;*/
+/*    opacity: 0.1;*/
+/*    !*position: absolute;*!*/
+/*    !*top: 0;*!*/
+/*    !*left: 0;*!*/
+/*    !*right: 0;*!*/
+/*    max-width: 100%;*/
+/*    height: 100%;*/
+/*    z-index: 1;*/
+/*}*/
+
+
+.movie-info {
+    padding: 10px 0px;
+
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.episode, .release-date {
+    font-size: 14px;
+    color: #ffd80e;
+}
+
+.movie-average {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+.disable {
+    color: var(--border-color);
+    cursor: default;
+    transition: color 0.2s ease-in;
+}
+.disable:hover {
+    cursor: default;
+}
+
+
